@@ -1,15 +1,19 @@
 package com.exceptos.devkits
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.exceptos.devkits.activities.ProgressCircleActivity
 import com.exceptos.devkits.utils.RecyclerItemClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private var mAdapter: MainAdapter? = null
+    val mActivity: Activity = this@MainActivity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,16 +25,17 @@ class MainActivity : AppCompatActivity() {
             "Progress Bar",
             "Buttons",
             "Bottom app bar",
-            "Bottom sheet",
-            "Seek bar",
+            "Bottom Navigation",
+            "Bottom Sheet",
+            "Seek Bar",
             "Chips",
-            "Tool bar",
+            "Tool Bar",
             "Ratings",
-            "Navigation drawer",
+            "Navigation Drawer",
             "Dialogs",
-            "Gird views",
+            "Gird Views",
             "Spinners",
-            "Text views",
+            "Text Views",
             "Layouts",
             "Fonts"))
 
@@ -49,6 +54,14 @@ class MainActivity : AppCompatActivity() {
 
             override fun onItemClick(view: View, position: Int) {
 
+                if(array[position] == "Progress Circle") {
+
+                    startActivity(Intent(mActivity, ProgressCircleActivity::class.java))
+
+                } else if (array[position] == "Progress Bar") {
+
+//                    startActivity(Intent(mActivity, ProgressCircleActivity::class.java))
+                }
 
             }
 
