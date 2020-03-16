@@ -21,7 +21,7 @@ class ProgressCircleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.activity_progress_circle)
+        setContentView(R.layout.activity_fragments)
 
         viewPager = findViewById(R.id.viewpager)
         setupViewPager(viewPager!!)

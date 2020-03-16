@@ -9,4 +9,18 @@
         <item name="android:statusBarColor">@android:color/white</item>
     </style>
 
+    <style name="SemiCircleProgressStyle">
+        <item name="showGradientProgress">true</item>
+        <item name="progressBackgroundColor">@color/progressBackground</item>
+        <item name="progressPathColor">@color/progressPathColor</item>
+        <item name="startProgressColor">@color/startProgressColor</item>
+        <item name="endProgressColor">@color/endProgressColor</item>
+        <item name="progressStrokeWidth">12dp</item>
+        <item name="roundedProgressStroke">true</item>
+        <item name="progressTextColor">@color/progressTextColor</item>
+        <item name="startAngle">45</item>
+        <item name="endAngle">270</item>
+        <item name="maxProgress">100</item>
+    </style>
+
 </resources>

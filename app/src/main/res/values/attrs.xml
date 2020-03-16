@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="progressStrokeWidth" format="dimension"/>
+    <attr name="progressTextColor" format="color"/>
+
+    <declare-styleable name="ProgressArcView">
+        <attr name="showGradientProgress" format="boolean"/>
+        <attr name="progressBackgroundColor" format="color"/>
+        <attr name="progressPathColor" format="color"/>
+        <attr name="startProgressColor" format="color"/>
+        <attr name="endProgressColor" format="color"/>
+        <attr name="progressStrokeWidth"/>
+        <attr name="roundedProgressStroke" format="boolean"/>
+        <attr name="progressTextColor"/>
+        <attr name="startAngle" format="float"/>
+        <attr name="endAngle" format="float"/>
+        <attr name="maxProgress" format="integer"/>
+    </declare-styleable>
+
+</resources>
