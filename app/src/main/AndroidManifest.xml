@@ -23,6 +23,7 @@
             android:name=".activities.ProgressCircleActivity"
             android:screenOrientation="portrait"/>
         <activity android:name=".activities.ProgressBarActivity" />
+        <activity android:name=".activities.ButtonsActivity" />
     </application>
 
 </manifest>

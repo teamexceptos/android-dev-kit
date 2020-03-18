@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.exceptos.devkits.activities.ButtonsActivity
 import com.exceptos.devkits.activities.ProgressBarActivity
 import com.exceptos.devkits.activities.ProgressCircleActivity
 import com.exceptos.devkits.utils.RecyclerItemClickListener
@@ -63,6 +64,10 @@ class MainActivity : AppCompatActivity() {
                 } else if (array[position] == "Progress Bar") {
 
                     startActivity(Intent(mActivity, ProgressBarActivity::class.java))
+
+                } else if (array[position] == "Buttons") {
+
+                    startActivity(Intent(mActivity, ButtonsActivity::class.java))
                 }
 
             }
