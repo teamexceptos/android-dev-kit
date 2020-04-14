@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    tools:context=".fragments.Dialogs.Dialogs">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Dialogs"
+                android:textSize="35sp"
+                app:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@android:color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simple Dialog"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/montserrat_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simple dialogs can display items that are immediately actionable when selected"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/simple_dialog_button"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:backgroundTint="@android:color/white"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alert Dialog"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/montserrat_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alert dialogs interrupt users with urgent information, details, or actions."
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/alert_dialog_button"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:backgroundTint="@android:color/white"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmation Dialog"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/montserrat_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Provide final confirmation for user's choices."
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/confirm_dialog_button"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:backgroundTint="@android:color/white"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Multi-choice Confirmation Dialog"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/montserrat_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Provides more than one final choice for users"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/multi_confirm_dialog_button"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:backgroundTint="@android:color/white"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full-screen Dialog"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/montserrat_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="These take up the entire screen, showing a group of tasks"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/fullscreen_dialog_button"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:backgroundTint="@android:color/white"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Modal-Bottom Sheet Dialog"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/montserrat_semi_bold"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="These appear at the bottom, ensuring comfort for users on larger devices"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/modal_dialog_button"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    android:text="SHOW"
+                    android:textColor="@color/colorAccent"
+                    app:fontFamily="@font/montserrat_regular"
+                    app:backgroundTint="@android:color/white"
+                    app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                    app:strokeColor="?attr/colorOnSurface"
+                    app:strokeWidth="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="20dp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.exceptos.devkits.activities.ButtonsActivity
+import com.exceptos.devkits.activities.DialogActivity
 import com.exceptos.devkits.activities.ProgressBarActivity
 import com.exceptos.devkits.activities.ProgressCircleActivity
 import com.exceptos.devkits.utils.RecyclerItemClickListener
@@ -57,17 +58,22 @@ class MainActivity : AppCompatActivity() {
 
             override fun onItemClick(view: View, position: Int) {
 
-                if(array[position] == "Progress Circle") {
+                when(array[position]){
+                    "Progress Circle" -> {
+                        startActivity(Intent(mActivity, ProgressCircleActivity::class.java))
+                    }
 
-                    startActivity(Intent(mActivity, ProgressCircleActivity::class.java))
+                    "Progress Bar" -> {
+                        startActivity(Intent(mActivity, ProgressBarActivity::class.java))
+                    }
 
-                } else if (array[position] == "Progress Bar") {
+                    "Buttons" -> {
+                        startActivity(Intent(mActivity, ButtonsActivity::class.java))
+                    }
 
-                    startActivity(Intent(mActivity, ProgressBarActivity::class.java))
-
-                } else if (array[position] == "Buttons") {
-
-                    startActivity(Intent(mActivity, ButtonsActivity::class.java))
+                    "Dialogs" -> {
+                        startActivity(Intent(mActivity, DialogActivity::class.java))
+                    }
                 }
 
             }

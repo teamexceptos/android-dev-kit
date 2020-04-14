@@ -2,8 +2,8 @@ package com.exceptos.devkits.activities
 
 import android.app.Activity
 import android.content.Intent
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
@@ -11,22 +11,22 @@ import androidx.viewpager.widget.ViewPager
 import com.exceptos.devkits.MainActivity
 import com.exceptos.devkits.R
 import com.exceptos.devkits.fragments.Buttons.Buttons
-import com.exceptos.devkits.fragments.ProgressBar.ProgressBarOne
-import java.util.*
+import com.exceptos.devkits.fragments.Dialogs.Dialogs
+import java.util.ArrayList
 
-class ButtonsActivity : AppCompatActivity() {
+class DialogActivity : AppCompatActivity() {
 
-    private val mActivity: Activity = this@ButtonsActivity
-    private var viewPager: ViewPager? = null
+    private lateinit var mActivity: Activity
+    private lateinit var viewPager: ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_fragments)
 
+        mActivity = this@DialogActivity
         viewPager = findViewById(R.id.viewpager)
-        setupViewPager(viewPager!!)
 
+        setupViewPager(viewPager)
     }
 
     override fun onBackPressed() {
@@ -39,7 +39,7 @@ class ButtonsActivity : AppCompatActivity() {
 
         val adapter = ViewPagerAdapter(this.supportFragmentManager)
 
-        adapter.addFragment(Buttons(), "Buttons")
+        adapter.addFragment(Dialogs(), "Dialogs")
 
         viewPager.adapter = adapter
         viewPager.setCurrentItem(0, true)
