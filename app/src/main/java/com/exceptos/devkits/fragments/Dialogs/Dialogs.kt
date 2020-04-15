@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.exceptos.devkits.R
+import com.exceptos.devkits.views.ModalBottomSheetDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class Dialogs : Fragment(), View.OnClickListener {
@@ -32,7 +33,7 @@ class Dialogs : Fragment(), View.OnClickListener {
                 }
 
                 modalDialogButton -> {
-
+                    showBottomSheetDialog()
                 }
 
                 multichoiceDialogButton -> {
@@ -78,7 +79,7 @@ class Dialogs : Fragment(), View.OnClickListener {
     }
 
     private fun showSimpleDialog(){
-        val items = arrayOf("Item 1", "Item 2", "Item 3");
+        val items = arrayOf("Item 1", "Item 2", "Item 3")
         MaterialAlertDialogBuilder(context)
             .setTitle("Simple Dialog")
             .setItems(items) { dialog, which ->
@@ -151,6 +152,15 @@ class Dialogs : Fragment(), View.OnClickListener {
             }
             .show()
     }
+
+    private fun showBottomSheetDialog(){
+        if (activity != null){
+            val bottomSheetDialog = ModalBottomSheetDialog()
+            bottomSheetDialog.show(activity!!.supportFragmentManager, ModalBottomSheetDialog::class.java.simpleName)
+        }
+
+    }
+
 }
 
 
