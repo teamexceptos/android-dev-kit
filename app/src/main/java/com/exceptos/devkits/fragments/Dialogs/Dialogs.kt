@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.exceptos.devkits.R
+import com.exceptos.devkits.views.FullscreenDialog
 import com.exceptos.devkits.views.ModalBottomSheetDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -29,7 +30,7 @@ class Dialogs : Fragment(), View.OnClickListener {
                 }
 
                 fullScreenDialogButton -> {
-
+                    showFullscreenDialog()
                 }
 
                 modalDialogButton -> {
@@ -133,22 +134,20 @@ class Dialogs : Fragment(), View.OnClickListener {
             .show()
     }
 
-    //TODO: Do Something with all the choices, my gee
     private fun showMultiChoiceConfirmationDialog(){
         val multiItems = arrayOf("Item 1", "Item 2", "Item 3")
         val checkedItems = booleanArrayOf(true, false, false, false)
         //​
         MaterialAlertDialogBuilder(context)
-            .setNeutralButton("Cancel"){_ , _ ->
-
+            .setNeutralButton("Cancel"){dialog , _ ->
+                dialog.dismiss()
             }
-            .setPositiveButton("Okay"){ _, _ ->
-
+            .setPositiveButton("Okay"){ dialog, _ ->
+                dialog.dismiss()
             }
             //Multi-choice items (initialized with checked items)
             .setMultiChoiceItems(multiItems, checkedItems) { _, _, _ ->
                 // Respond to item chosen
-
             }
             .show()
     }
@@ -160,6 +159,15 @@ class Dialogs : Fragment(), View.OnClickListener {
         }
 
     }
+
+    private fun showFullscreenDialog(){
+        if (activity != null){
+            val fullscreenDialog = FullscreenDialog()
+            fullscreenDialog.show(activity!!.supportFragmentManager, FullscreenDialog::class.java.simpleName)
+        }
+
+    }
+
 
 }
 
