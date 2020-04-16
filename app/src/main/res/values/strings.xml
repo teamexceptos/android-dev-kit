@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">dev kits</string>
+    <string name="bottom_app_bar">Bottom App Bar</string>
+    <string name="bottom_appbar_without_floating_action_bar">Bottom appbar without floating action bar</string>
 </resources>

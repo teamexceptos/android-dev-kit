@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.exceptos.devkits.activities.BottomAppBarActivity
 import com.exceptos.devkits.activities.ButtonsActivity
 import com.exceptos.devkits.activities.ProgressBarActivity
 import com.exceptos.devkits.activities.ProgressCircleActivity
@@ -68,6 +69,9 @@ class MainActivity : AppCompatActivity() {
                 } else if (array[position] == "Buttons") {
 
                     startActivity(Intent(mActivity, ButtonsActivity::class.java))
+                }
+                else if(array[position] == "Bottom app bar"){
+                    startActivity(Intent(mActivity, BottomAppBarActivity::class.java))
                 }
 
             }
