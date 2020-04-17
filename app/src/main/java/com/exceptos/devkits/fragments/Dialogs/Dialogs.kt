@@ -81,7 +81,7 @@ class Dialogs : Fragment(), View.OnClickListener {
 
     private fun showSimpleDialog(){
         val items = arrayOf("Item 1", "Item 2", "Item 3")
-        MaterialAlertDialogBuilder(context)
+        MaterialAlertDialogBuilder(context!!)
             .setTitle("Simple Dialog")
             .setItems(items) { dialog, which ->
                 Toast.makeText(activity!!, "You chose ${items[which]} from the simple dialog!", Toast.LENGTH_LONG).show()
@@ -92,7 +92,7 @@ class Dialogs : Fragment(), View.OnClickListener {
     }
 
     private fun showAlertDialog(){
-        MaterialAlertDialogBuilder(context)
+        MaterialAlertDialogBuilder(context!!)
             .setTitle("Alert Dialog")
             .setMessage("The subtitle of this dialog")
             .setNeutralButton("Cancel") { dialog, _ ->
@@ -114,7 +114,7 @@ class Dialogs : Fragment(), View.OnClickListener {
         val singleItems = arrayOf("Item 1", "Item 2", "Item 3")
         val checkedItem = 1
         //​
-        MaterialAlertDialogBuilder(context)
+        MaterialAlertDialogBuilder(context!!)
             .setTitle("Confirmation Dialog")
             .setNeutralButton("Cancel") { dialog, _ ->
                 // Respond to neutral button press
@@ -138,7 +138,7 @@ class Dialogs : Fragment(), View.OnClickListener {
         val multiItems = arrayOf("Item 1", "Item 2", "Item 3")
         val checkedItems = booleanArrayOf(true, false, false, false)
         //​
-        MaterialAlertDialogBuilder(context)
+        MaterialAlertDialogBuilder(context!!)
             .setNeutralButton("Cancel"){dialog , _ ->
                 dialog.dismiss()
             }
