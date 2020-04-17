@@ -11,7 +11,7 @@ class ProgressArc(context: Context, attrs: AttributeSet?, defStyleAttr: Int)
     : View(context, attrs, defStyleAttr) {
 
     // defaults
-    private val DEFAULT_PROGRESS_STROKE_WIDTH = 16f
+    private val DEFAULT_PROGRESS_STROKE_WIDTH = 30f
     private val DEFAULT_START_PROGRESS_ANGLE = 0f
     private val DEFAULT_END_PROGRESS_ANGLE = 360f
     private val DEFAULT_MAX_PROGRESS = 100
