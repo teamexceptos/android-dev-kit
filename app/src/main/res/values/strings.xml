@@ -1,6 +1,28 @@
 <resources>
     <string name="app_name">dev kits</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_app_bar">Bottom App Bar</string>
+    <string name="bottom_appbar_without_floating_action_bar">Bottom appbar without floating action bar</string>
+    <string name="action_search">Search</string>
+    <string name="action_mail">mail</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_archieve">archive</string>
+    <string name="toggle">toggle</string>
+    <string name="nav_item1">item one</string>
+    <string name="nav_item2">item two</string>
+    <string name="nav_item3">item three</string>
+    <string name="nav_item4">item four</string>
+    <string name="nav_item5">item five</string>
+    <string name="nav_item6">item six</string>
+    <string name="nav_item7">item seven</string>
+    <string name="nav_item8">item eight</string>
+    <string name="nav_item9">item nine</string>
+    <string name="nav_item10">item ten</string>
+    <string name="nav_item11">item eleven</string>
+    <string name="nav_item12">item twelve</string>
+    <string name="nav_item13">item thirteen</string>
+    <string name="bottom_sheet_name">Exceptos</string>
+    <string name="bottom_sheet_email">teamexceptos@gmail.com</string>
+    <string name="primary_screen_text">Primary Screen</string>
+    <string name="secondary_sceen_text">Secondary  Screen</string>
 </resources>

@@ -12,6 +12,7 @@
         android:padding="18dp"
         android:text="Progress Arc"
         android:textColor="@android:color/black"
+        style="@style/Widget.MaterialComponents.TextView"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="@font/montserrat_semi_bold" />

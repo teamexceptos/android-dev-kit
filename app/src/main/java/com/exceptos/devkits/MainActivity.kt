@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.exceptos.devkits.activities.ButtonsActivity
-import com.exceptos.devkits.activities.DialogActivity
-import com.exceptos.devkits.activities.ProgressBarActivity
-import com.exceptos.devkits.activities.ProgressCircleActivity
+import com.exceptos.devkits.activities.*
 import com.exceptos.devkits.utils.RecyclerItemClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -73,6 +70,11 @@ class MainActivity : AppCompatActivity() {
 
                     "Dialogs" -> {
                         startActivity(Intent(mActivity, DialogActivity::class.java))
+                    }
+
+                    "Bottom app bar" -> {
+                        startActivity(Intent(mActivity, BottomAppBarActivity::class.java))
+
                     }
                 }
 

@@ -6,6 +6,7 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/Widget.MaterialComponents.TextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -21,11 +22,10 @@
         android:layout_height="match_parent"
         android:padding="24dp">
 
-        <ProgressBar
+        <com.exceptos.devkits.views.CustomProgressBar
             android:id="@+id/progress_horizontal"
-            style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="17dp"
             android:layout_centerInParent="true"/>
 
     </RelativeLayout>
