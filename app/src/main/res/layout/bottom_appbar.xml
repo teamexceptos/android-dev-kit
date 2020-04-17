@@ -1,107 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bottom_app_bar"
         android:layout_marginTop="32dp"
         android:padding="18dp"
+        android:text="@string/bottom_app_bar"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:fontFamily="@font/montserrat_semi_bold"
+        app:fontFamily="@font/montserrat_semi_bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toggle"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/black"
         />
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/bottom_appbar_without_floating_action_bar"
-    android:layout_marginTop="120dp"
-    android:layout_marginStart="11dp"
-    android:textColor="@android:color/black"
-    android:layout_marginBottom="11dp"
-    android:layout_marginEnd="11dp"
-    />
 
     <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar_three"
+        android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="top"
+        android:layout_gravity="bottom"
         app:backgroundTint="@android:color/holo_blue_dark"
         app:fabAlignmentMode="center"
-        android:layout_marginTop="150dp"
-        app:navigationIcon="@drawable/ic_menu"
-        />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bottom app bar with floating action bar anchored at the view's end"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="11dp"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="11dp"
-        />
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar_one"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="center"
-        app:fabCradleRoundedCornerRadius="15dp"
-        app:backgroundTint="@color/colorAccent"
-        app:fabAlignmentMode="end"
-        android:layout_marginTop="150dp"
-        app:navigationIcon="@drawable/ic_menu"
-        />
+        app:hideOnScroll="true"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/ic_menu" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_one"
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:fabSize="normal"
-        app:backgroundTint="@color/colorPrimary"
         android:src="@drawable/ic_add"
-        app:layout_anchor="@id/bottomAppBar_one"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bottom app bar with floating action bar anchored at the view's end"
-        android:layout_gravity="bottom"
-        android:layout_marginStart="11dp"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="71dp"
-        android:layout_marginEnd="11dp"
-        />
-
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar_two"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_gravity="bottom"
-        app:backgroundTint="@color/colorPrimary"
-        app:fabAlignmentMode="center"
-        app:navigationIcon="@drawable/ic_menu"
-        />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_two"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:fabSize="normal"
-        android:src="@drawable/ic_add"
-        app:layout_anchor="@id/bottomAppBar_two"
-        />
+        app:layout_anchor="@id/bottomAppBar" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
