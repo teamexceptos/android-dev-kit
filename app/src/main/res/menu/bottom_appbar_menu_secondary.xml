@@ -2,9 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/app_bar_mail"
-        android:icon="@drawable/ic_mail"
-        android:title="@string/action_mail"
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/action_search"
         app:showAsAction="ifRoom"/>
 
     <item
