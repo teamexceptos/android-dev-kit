@@ -25,14 +25,15 @@ class MainActivity : AppCompatActivity() {
             "Progress Bar",
             "Buttons",
             "Bottom app bar",
+            "Dialogs",
             "Bottom Navigation",
             "Bottom Sheet",
+            "Text fields",
             "Seek Bar",
             "Chips",
             "Tool Bar",
             "Ratings",
             "Navigation Drawer",
-            "Dialogs",
             "Gird Views",
             "Spinners",
             "Text Views",
@@ -74,6 +75,11 @@ class MainActivity : AppCompatActivity() {
 
                     "Bottom app bar" -> {
                         startActivity(Intent(mActivity, BottomAppBarActivity::class.java))
+
+                    }
+
+                    "Text fields" -> {
+                        startActivity(Intent(mActivity, TextFieldsActivity::class.java))
 
                     }
                 }
