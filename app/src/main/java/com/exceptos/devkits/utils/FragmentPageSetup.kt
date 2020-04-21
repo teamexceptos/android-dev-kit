@@ -10,13 +10,13 @@ import androidx.viewpager.widget.ViewPager
 import com.exceptos.devkits.fragments.Buttons.Buttons
 import java.util.ArrayList
 
-fun setupViewPager(activity: FragmentActivity, viewPager: ViewPager) {
+fun setupViewPager(activity: FragmentActivity, fragment: Fragment, viewPager: ViewPager) {
 
     val adapter = ViewPagerAdapter(activity.supportFragmentManager,
         FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
     )
 
-    adapter.addFragment(Buttons(), "Buttons")
+    adapter.addFragment(fragment, "Buttons")
 
     viewPager.adapter = adapter
     viewPager.setCurrentItem(0, true)

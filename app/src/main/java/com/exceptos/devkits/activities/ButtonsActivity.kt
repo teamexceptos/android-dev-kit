@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager.widget.ViewPager
 import com.exceptos.devkits.R
+import com.exceptos.devkits.fragments.Buttons.Buttons
 import com.exceptos.devkits.utils.setupViewPager
 
 class ButtonsActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class ButtonsActivity : AppCompatActivity() {
 
         viewPager = findViewById(R.id.viewpager)
 
-        setupViewPager(mActivity as FragmentActivity, viewPager!!)
+        setupViewPager(mActivity as FragmentActivity, Buttons(), viewPager!!)
 
     }
 

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager.widget.ViewPager
 import com.exceptos.devkits.R
+import com.exceptos.devkits.fragments.ProgressCircle.ProgressCircleOne
 import com.exceptos.devkits.utils.setupViewPager
 
 class ProgressCircleActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class ProgressCircleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_fragments)
 
         viewPager = findViewById(R.id.viewpager)
-        setupViewPager(mActivity as FragmentActivity, viewPager!!)
+        setupViewPager(mActivity as FragmentActivity, ProgressCircleOne(), viewPager!!)
 
     }
 

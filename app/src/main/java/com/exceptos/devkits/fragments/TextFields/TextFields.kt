@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import com.exceptos.devkits.R
 import kotlinx.android.synthetic.main.text_fields.*
 
-class Buttons : Fragment() {
+class TextFields : Fragment() {
 
     val list = listOf("Eat", "Code", "Android", "Sleep", "Repeat")
 

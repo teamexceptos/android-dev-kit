@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager.widget.ViewPager
 import com.exceptos.devkits.R
+import com.exceptos.devkits.fragments.TextFields.TextFields
 import com.exceptos.devkits.utils.setupViewPager
 
 class TextFieldsActivity : AppCompatActivity() {
@@ -20,7 +21,7 @@ class TextFieldsActivity : AppCompatActivity() {
         mActivity = this@TextFieldsActivity
         viewPager = findViewById(R.id.viewpager)
 
-        setupViewPager(mActivity as FragmentActivity, viewPager)
+        setupViewPager(mActivity as FragmentActivity, TextFields(), viewPager)
     }
 
     override fun onBackPressed() {
