@@ -57,4 +57,7 @@
     <string name="modal_bottom_sheet_dialog">Modal-Bottom Sheet Dialog</string>
     <string name="these_appear_at_the_bottom_ensuring_comfort_for_users_on_larger_devices">These appear at the bottom, ensuring comfort for users on larger devices</string>
     <string name="buttons">Buttons</string>
+    <string name="sliders">Sliders</string>
+    <string name="continuous_slider">Continuous slider</string>
+    <string name="discrete_slider">Discrete slider</string>
 </resources>

@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             "Bottom Navigation",
             "Bottom Sheet",
             "Text fields",
-            "Seek Bar",
+            "Sliders",
             "Chips",
             "Tool Bar",
             "Ratings",
@@ -80,6 +80,11 @@ class MainActivity : AppCompatActivity() {
 
                     "Text fields" -> {
                         startActivity(Intent(mActivity, TextFieldsActivity::class.java))
+
+                    }
+
+                    "Sliders" -> {
+                        startActivity(Intent(mActivity, SlidersActivity::class.java))
 
                     }
                 }
