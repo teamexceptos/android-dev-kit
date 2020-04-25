@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:text="Bottons"
+        android:text="@string/buttons"
         android:textColor="@android:color/black"
         android:textSize="35sp"
         app:fontFamily="@font/montserrat_semi_bold" />
