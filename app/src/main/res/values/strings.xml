@@ -60,4 +60,5 @@
     <string name="sliders">Sliders</string>
     <string name="continuous_slider">Continuous slider</string>
     <string name="discrete_slider">Discrete slider</string>
+    <string name="favorite">Favorite</string>
 </resources>

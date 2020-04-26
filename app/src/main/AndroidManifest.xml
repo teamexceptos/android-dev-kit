@@ -34,6 +34,8 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".activities.SlidersActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".activities.TopBarActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
