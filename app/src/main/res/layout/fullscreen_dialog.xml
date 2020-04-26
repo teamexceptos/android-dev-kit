@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:id="@+id/fullscreen_dismiss_button_toolbar"
-                    app:srcCompat="@drawable/ic_close_black_24dp"
+                    app:srcCompat="@drawable/ic_close_white_24dp"
                     android:background="@android:color/transparent"
                     />
 

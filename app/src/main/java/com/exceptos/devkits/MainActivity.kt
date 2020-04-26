@@ -83,6 +83,11 @@ class MainActivity : AppCompatActivity() {
 
                     }
 
+                    "Top app bar" -> {
+                        startActivity(Intent(mActivity, TopBarActivity::class.java))
+
+                    }
+
                     "Sliders" -> {
                         startActivity(Intent(mActivity, SlidersActivity::class.java))
 

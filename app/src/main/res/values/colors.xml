@@ -5,6 +5,7 @@
     <color name="colorAccent">#150E42</color>
     <color name="colorSnackBarButton">#ef7f3e</color>
 
+    <item name="white_color" type="color">#ffffff</item>
 
     <array name="random_color">
         <item name="red_400" type="color">#e84e40</item>
