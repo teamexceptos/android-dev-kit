@@ -82,6 +82,10 @@ class MainActivity : AppCompatActivity() {
                         startActivity(Intent(mActivity, TextFieldsActivity::class.java))
 
                     }
+
+                    "Chips" -> {
+                        startActivity(Intent(mActivity, ChipsActivity::class.java))
+                    }
                 }
 
             }

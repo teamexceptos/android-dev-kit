@@ -1,14 +1,11 @@
 package com.exceptos.devkits.utils
 
-import android.app.Activity
-import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.exceptos.devkits.fragments.Buttons.Buttons
-import java.util.ArrayList
+import java.util.*
 
 fun setupViewPager(activity: FragmentActivity, fragment: Fragment, viewPager: ViewPager) {
 
