@@ -80,4 +80,5 @@
     <string name="user_email">userisbomombastic@gmail.com</string>
     <string name="bombastic_user">Bombastic User</string>
     <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="navigation_drawer_instro">Swipe to the right to view a navigation drawer</string>
 </resources>
