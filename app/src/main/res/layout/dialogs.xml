@@ -1,40 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:paddingTop="20dp"
-    android:paddingStart="15dp"
-    android:paddingEnd="15dp"
     tools:context=".fragments.Dialogs.Dialogs">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/dialogs"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        app:fontFamily="@font/montserrat_semi_bold" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/dialogs"
-                android:textSize="35sp"
-                app:fontFamily="@font/montserrat_semi_bold"
-                android:textColor="@android:color/black"
-                />
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -42,18 +39,18 @@
                     android:text="@string/simple_dialog"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    app:fontFamily="@font/montserrat_semi_bold"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_semi_bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/simple_dialogs_can_display_items_that_are_immediately_actionable_when_selected"
                     android:layout_marginTop="3dp"
+                    android:text="@string/simple_dialogs_can_display_items_that_are_immediately_actionable_when_selected"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
-                    app:fontFamily="@font/montserrat_regular"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_regular" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/simple_dialog_button"
@@ -64,8 +61,8 @@
                     android:layout_marginTop="5dp"
                     android:text="@string/show"
                     android:textColor="@color/colorAccent"
-                    app:fontFamily="@font/montserrat_regular"
                     app:backgroundTint="@android:color/white"
+                    app:fontFamily="@font/montserrat_regular"
                     app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
                     app:strokeColor="?attr/colorOnSurface"
                     app:strokeWidth="1dp" />
@@ -73,8 +70,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
                     android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray"
 
                     />
 
@@ -83,8 +80,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -92,18 +89,18 @@
                     android:text="Alert Dialog"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    app:fontFamily="@font/montserrat_semi_bold"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_semi_bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/alert_dialogs_interrupt_users_with_urgent_information_details_or_actions"
                     android:layout_marginTop="3dp"
+                    android:text="@string/alert_dialogs_interrupt_users_with_urgent_information_details_or_actions"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
-                    app:fontFamily="@font/montserrat_regular"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_regular" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/alert_dialog_button"
@@ -123,8 +120,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
                     android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray"
 
                     />
 
@@ -133,8 +130,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -142,18 +139,18 @@
                     android:text="@string/confirmation_dialog"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    app:fontFamily="@font/montserrat_semi_bold"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_semi_bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/provide_final_confirmation_for_user_s_choices"
                     android:layout_marginTop="3dp"
+                    android:text="@string/provide_final_confirmation_for_user_s_choices"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
-                    app:fontFamily="@font/montserrat_regular"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_regular" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/confirm_dialog_button"
@@ -173,8 +170,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
                     android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray"
 
                     />
 
@@ -183,8 +180,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -192,18 +189,18 @@
                     android:text="@string/multi_choice_confirmation_dialog"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    app:fontFamily="@font/montserrat_semi_bold"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_semi_bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/provides_more_than_one_final_choice_for_users"
                     android:layout_marginTop="3dp"
+                    android:text="@string/provides_more_than_one_final_choice_for_users"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
-                    app:fontFamily="@font/montserrat_regular"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_regular" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/multi_confirm_dialog_button"
@@ -223,8 +220,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
                     android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray"
 
                     />
 
@@ -233,8 +230,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -242,18 +239,18 @@
                     android:text="@string/full_screen_dialog"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    app:fontFamily="@font/montserrat_semi_bold"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_semi_bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/these_take_up_the_entire_screen_showing_a_group_of_tasks"
                     android:layout_marginTop="3dp"
+                    android:text="@string/these_take_up_the_entire_screen_showing_a_group_of_tasks"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
-                    app:fontFamily="@font/montserrat_regular"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_regular" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/fullscreen_dialog_button"
@@ -273,8 +270,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
                     android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray"
 
                     />
 
@@ -283,8 +280,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="20dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingTop="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -292,18 +289,18 @@
                     android:text="@string/modal_bottom_sheet_dialog"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
-                    app:fontFamily="@font/montserrat_semi_bold"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_semi_bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/these_appear_at_the_bottom_ensuring_comfort_for_users_on_larger_devices"
                     android:layout_marginTop="3dp"
+                    android:text="@string/these_appear_at_the_bottom_ensuring_comfort_for_users_on_larger_devices"
                     android:textColor="@android:color/black"
                     android:textSize="15sp"
-                    app:fontFamily="@font/montserrat_regular"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:fontFamily="@font/montserrat_regular" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/modal_dialog_button"
@@ -323,15 +320,14 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray"
                     android:layout_marginTop="20dp"
+                    android:background="@android:color/darker_gray"
 
                     />
 
             </LinearLayout>
 
         </LinearLayout>
-
 
 
     </androidx.core.widget.NestedScrollView>

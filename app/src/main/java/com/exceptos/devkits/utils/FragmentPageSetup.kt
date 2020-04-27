@@ -13,7 +13,22 @@ fun setupViewPager(activity: FragmentActivity, fragment: Fragment, viewPager: Vi
         FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
     )
 
-    adapter.addFragment(fragment, "Buttons")
+    adapter.addFragment(fragment, activity.localClassName)
+
+    viewPager.adapter = adapter
+    viewPager.setCurrentItem(0, true)
+    viewPager.offscreenPageLimit = adapter.count
+}
+
+fun setupViewPager(activity: FragmentActivity, arrayFragment: ArrayList<Fragment>, viewPager: ViewPager) {
+
+    val adapter = ViewPagerAdapter(activity.supportFragmentManager,
+        FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
+    )
+
+    arrayFragment.forEach {
+        adapter.addFragment(it, activity.localClassName)
+    }
 
     viewPager.adapter = adapter
     viewPager.setCurrentItem(0, true)
