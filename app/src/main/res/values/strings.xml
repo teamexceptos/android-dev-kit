@@ -61,4 +61,20 @@
     <string name="continuous_slider">Continuous slider</string>
     <string name="discrete_slider">Discrete slider</string>
     <string name="favorite">Favorite</string>
+    <string name="chips">Chips</string>
+    <string name="normal_chip">Normal Chip</string>
+    <string name="entry_chip">Entry Chip</string>
+    <string name="entry_chip_instro">This type of chip represents a piece of info in compact form.</string>
+    <string name="filter_chip">Filter Chip</string>
+    <string name="filter_chip_instro">Usually contains a tag to filter a collection.</string>
+    <string name="choice_chip">Choice Chip</string>
+    <string name="choice_chip_instro">Used when making one selection from a group of options.</string>
+    <string name="action_chip">Action Chip</string>
+    <string name="action_chip_instro">Use to trigger an action in the current context.</string>
+    <string name="chip_group">Chip Group</string>
+    <string name="chip_group_instro">Contains a number of chips</string>
+    <string name="filter_chip_group">Filter Chip Group</string>
+    <string name="filter_group_instro">Filters a collection based on user\'s choices</string>
+    <string name="choice_chip_group">Choice Chip Group</string>
+    <string name="choice_group_instro">Allows one selection from a group of options.</string>
 </resources>
