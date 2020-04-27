@@ -77,4 +77,7 @@
     <string name="filter_group_instro">Filters a collection based on user\'s choices</string>
     <string name="choice_chip_group">Choice Chip Group</string>
     <string name="choice_group_instro">Allows one selection from a group of options.</string>
+    <string name="user_email">userisbomombastic@gmail.com</string>
+    <string name="bombastic_user">Bombastic User</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
 </resources>

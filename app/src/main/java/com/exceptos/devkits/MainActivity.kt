@@ -96,6 +96,10 @@ class MainActivity : AppCompatActivity() {
                     "Chips" -> {
                         startActivity(Intent(mActivity, ChipsActivity::class.java))
                     }
+
+                    "Navigation Drawer" -> {
+                        
+                    }
                 }
 
             }
