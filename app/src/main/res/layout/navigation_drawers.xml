@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:menu="@menu/navigation_menu"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.NavigationDrawers.NavigationDrawers">
 
@@ -30,6 +32,15 @@
             android:paddingStart="5dp"
             android:paddingEnd="5dp"
             android:textColor="@android:color/black"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="@string/open_drawer"
+            android:fontFamily="@font/montserrat_regular"
+            android:textStyle="bold"
+            android:id="@+id/open_drawer"
+            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"/>
 
     </LinearLayout>

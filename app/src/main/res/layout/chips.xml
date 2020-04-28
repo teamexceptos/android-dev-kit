@@ -88,7 +88,7 @@
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:chipIcon="@drawable/ic_favorite_black_24dp"
+                    app:chipIcon="@drawable/ic_favorite_black_24dp_white"
                     android:layout_marginTop="10dp"
                     app:chipBackgroundColor="@color/colorPrimary"
                     android:textColor="@android:color/white"
@@ -184,8 +184,8 @@
                     app:chipBackgroundColor="@color/colorPrimary"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
-                    app:chipIcon="@drawable/ic_favorite_black_24dp"
-                    android:text="@string/filter_chip"/>
+                    app:chipIcon="@drawable/ic_favorite_black_24dp_white"
+                    android:text="@string/choice_chip"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -230,8 +230,8 @@
                     app:chipBackgroundColor="@color/colorPrimary"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
-                    app:chipIcon="@drawable/ic_favorite_black_24dp"
-                    android:text="@string/filter_chip"/>
+                    app:chipIcon="@drawable/ic_favorite_black_24dp_white"
+                    android:text="@string/action_chip"/>
 
                 <View
                     android:layout_width="match_parent"
@@ -275,6 +275,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:chipSpacingHorizontal="10dp"
+                        android:layout_marginTop="5dp"
                         app:singleLine="true">
 
                         <com.google.android.material.chip.Chip
@@ -360,6 +361,7 @@
                     <com.google.android.material.chip.ChipGroup
                         android:layout_width="wrap_content"
                         app:chipSpacingHorizontal="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_height="wrap_content"
                         app:singleLine="true">
 
@@ -454,6 +456,7 @@
                         android:layout_height="wrap_content"
                         app:singleSelection="true"
                         app:chipSpacingHorizontal="10dp"
+                        android:layout_marginTop="5dp"
                         app:singleLine="true">
 
                         <com.google.android.material.chip.Chip
