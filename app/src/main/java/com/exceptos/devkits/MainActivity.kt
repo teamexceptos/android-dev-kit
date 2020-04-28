@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     "Navigation Drawer" -> {
-                        
+                        startActivity(Intent(mActivity, NavigationDrawerActivity::class.java))
                     }
                 }
 

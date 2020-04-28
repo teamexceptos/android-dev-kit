@@ -36,6 +36,7 @@
             android:screenOrientation="portrait"/>
         <activity android:name=".activities.TopBarActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".activities.NavigationDrawerActivity" />
     </application>
 
 </manifest>

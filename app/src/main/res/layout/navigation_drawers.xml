@@ -27,6 +27,8 @@
             android:text="@string/navigation_drawer_instro"
             android:fontFamily="@font/montserrat_regular"
             android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             android:textColor="@android:color/black"
             android:layout_height="wrap_content"/>
 
