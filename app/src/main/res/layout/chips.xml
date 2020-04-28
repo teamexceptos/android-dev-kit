@@ -10,7 +10,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:text="@string/chips"
         android:textColor="@android:color/black"
         android:textSize="35sp"
@@ -45,7 +48,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    app:chipBackgroundColor="@color/colorPrimary"
+                    android:id="@+id/normal_chip"
+                    app:chipIcon="@drawable/ic_location"
+                    app:chipBackgroundColor="@android:color/black"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
                     android:text="@string/normal_chip"/>
@@ -88,9 +93,11 @@
                     style="@style/Widget.MaterialComponents.Chip.Entry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:chipIcon="@drawable/ic_favorite_black_24dp_white"
+                    app:chipIcon="@drawable/ic_bookmark"
                     android:layout_marginTop="10dp"
-                    app:chipBackgroundColor="@color/colorPrimary"
+                    android:id="@+id/entry_chip"
+                    app:checkedIconTint="@android:color/white"
+                    app:chipBackgroundColor="@android:color/black"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
                     android:text="@string/entry_chip"/>
@@ -135,7 +142,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:checkable="true"
-                    app:chipBackgroundColor="@color/colorPrimary"
+                    android:id="@+id/filter_chip"
+                    app:checkedIconTint="@android:color/white"
+                    app:chipBackgroundColor="@android:color/black"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
                     app:chipIcon="@drawable/ic_favorite_black_24dp_white"
@@ -181,7 +190,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:checkable="true"
-                    app:chipBackgroundColor="@color/colorPrimary"
+                    android:id="@+id/choice_chip"
+                    app:checkedIconTint="@android:color/white"
+                    app:chipBackgroundColor="@android:color/black"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
                     app:chipIcon="@drawable/ic_favorite_black_24dp_white"
@@ -227,7 +238,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:checkable="true"
-                    app:chipBackgroundColor="@color/colorPrimary"
+                    android:id="@+id/action_chip"
+                    app:checkedIconTint="@android:color/white"
+                    app:chipBackgroundColor="@android:color/black"
                     android:textColor="@android:color/white"
                     app:fontFamily="@font/montserrat_regular"
                     app:chipIcon="@drawable/ic_favorite_black_24dp_white"
@@ -275,6 +288,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:chipSpacingHorizontal="10dp"
+                        android:id="@+id/chip_group"
                         android:layout_marginTop="5dp"
                         app:singleLine="true">
 
@@ -282,38 +296,49 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            app:chipIcon="@drawable/ic_cloud"
+                            android:id="@+id/chip_group_1"
+                            app:chipIconTint="@android:color/white"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/chip_group"/>
+                            android:text="@string/sleep"/>
 
                         <com.google.android.material.chip.Chip
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            app:chipIcon="@drawable/ic_user_circle"
+                            app:chipIconTint="@android:color/white"
+                            android:id="@+id/chip_group_2"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/chip_group"/>
+                            android:text="@string/code"/>
 
                         <com.google.android.material.chip.Chip
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            app:chipIcon="@drawable/ic_location"
+                            android:id="@+id/chip_group_3"
+                            app:chipIconTint="@android:color/white"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/chip_group"/>
+                            android:text="@string/eat"/>
 
                         <com.google.android.material.chip.Chip
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            android:id="@+id/chip_group_4"
+                            app:chipBackgroundColor="@android:color/black"
                             app:chipIcon="@drawable/ic_favorite_black_24dp_white"
                             android:textColor="@android:color/white"
+                            android:textAppearance="@font/montserrat_regular"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/chip_group"/>
+                            android:text="@string/repeat"/>
 
                     </com.google.android.material.chip.ChipGroup>
 
@@ -362,6 +387,7 @@
                         android:layout_width="wrap_content"
                         app:chipSpacingHorizontal="10dp"
                         android:layout_marginTop="5dp"
+                        android:id="@+id/filter_group"
                         android:layout_height="wrap_content"
                         app:singleLine="true">
 
@@ -371,42 +397,51 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:checkable="true"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            android:id="@+id/filter_group_1"
+                            app:checkedIconTint="@android:color/white"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            app:chipIcon="@drawable/ic_favorite_black_24dp_white"
-                            android:text="@string/filter_chip_group"/>
+                            android:text="@string/repeat"/>
+
+                        <com.google.android.material.chip.Chip
+                            style="@style/Widget.MaterialComponents.Chip.Filter"
+                            android:id="@+id/filter_group_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:checkedIconTint="@android:color/white"
+                            android:checkable="true"
+                            app:chipBackgroundColor="@android:color/black"
+                            android:textColor="@android:color/white"
+                            app:fontFamily="@font/montserrat_regular"
+                            android:text="@string/sleep"/>
 
                         <com.google.android.material.chip.Chip
                             style="@style/Widget.MaterialComponents.Chip.Filter"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/filter_group_3"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            app:checkedIconTint="@android:color/white"
+                            android:checkable="true"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/filter_chip_group"/>
+                            android:text="@string/code"/>
 
                         <com.google.android.material.chip.Chip
                             style="@style/Widget.MaterialComponents.Chip.Filter"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:id="@+id/filter_group_4"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            app:chipBackgroundColor="@android:color/black"
+                            android:checkable="true"
+                            app:checkedIconTint="@android:color/white"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/filter_chip_group"/>
-
-                        <com.google.android.material.chip.Chip
-                            style="@style/Widget.MaterialComponents.Chip.Filter"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
-                            app:chipIcon="@drawable/ic_favorite_black_24dp_white"
-                            android:textColor="@android:color/white"
-                            app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/filter_chip_group"/>
+                            android:text="@string/eat"/>
 
                     </com.google.android.material.chip.ChipGroup>
 
@@ -455,6 +490,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:singleSelection="true"
+                        android:id="@+id/choice_group"
                         app:chipSpacingHorizontal="10dp"
                         android:layout_marginTop="5dp"
                         app:singleLine="true">
@@ -465,42 +501,51 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:checkable="true"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            android:id="@+id/choice_group_1"
+                            app:checkedIconTint="@android:color/white"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            app:chipIcon="@drawable/ic_favorite_black_24dp_white"
-                            android:text="@string/choice_chip_group"/>
+                            android:text="@string/eat"/>
 
                         <com.google.android.material.chip.Chip
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            android:checkable="true"
+                            android:id="@+id/choice_group_2"
+                            app:checkedIconTint="@android:color/white"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/choice_chip_group"/>
+                            android:text="@string/sleep"/>
 
                         <com.google.android.material.chip.Chip
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
+                            app:checkedIconTint="@android:color/white"
+                            android:checkable="true"
+                            android:id="@+id/choice_group_3"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/choice_chip_group"/>
+                            android:text="@string/code"/>
 
                         <com.google.android.material.chip.Chip
                             style="@style/Widget.MaterialComponents.Chip.Choice"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            app:checkedIconTint="@android:color/white"
+                            android:checkable="true"
                             android:layout_marginTop="10dp"
-                            app:chipBackgroundColor="@color/colorPrimary"
-                            app:chipIcon="@drawable/ic_favorite_black_24dp_white"
+                            android:id="@+id/choice_group_4"
+                            app:chipBackgroundColor="@android:color/black"
                             android:textColor="@android:color/white"
                             app:fontFamily="@font/montserrat_regular"
-                            android:text="@string/choice_chip_group"/>
+                            android:text="@string/repeat"/>
 
                     </com.google.android.material.chip.ChipGroup>
 

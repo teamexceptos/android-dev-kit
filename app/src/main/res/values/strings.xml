@@ -82,4 +82,8 @@
     <string name="navigation_drawer">Navigation Drawer</string>
     <string name="navigation_drawer_instro">Click below to open the navigation drawer</string>
     <string name="open_drawer">OPEN DRAWER</string>
+    <string name="eat">Eat</string>
+    <string name="code">Code</string>
+    <string name="sleep">Sleep</string>
+    <string name="repeat">Repeat</string>
 </resources>
