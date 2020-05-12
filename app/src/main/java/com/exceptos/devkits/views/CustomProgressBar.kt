@@ -16,6 +16,7 @@ class CustomProgressBar : View {
     internal var progressBarValue = 0
     internal var maxprogressValue = 100
     internal var setText = false
+    internal var colorProgress: Int = DKGRAY
 
     constructor(context: Context) : super(context)
 
@@ -25,6 +26,11 @@ class CustomProgressBar : View {
 
     fun setValue(value: Int) {
         progressBarValue = value
+        invalidate()
+    }
+
+    fun setProgressColor(value: Int) {
+        colorProgress = value
         invalidate()
     }
 
@@ -53,7 +59,7 @@ class CustomProgressBar : View {
 
         // Draw the progress bar.
         val barPaint = Paint()
-        barPaint.color = DKGRAY
+        barPaint.color = colorProgress
         barPaint.style = Paint.Style.FILL
         barPaint.isAntiAlias = true
 
